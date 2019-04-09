@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hello</string>
+    <string name="str1">Welcome to Temperature Conversion!</string>
+    <string name="str2">Please enter Celsius temperature:</string>
+    <string name="btn_label">Convert to Fahrenheit temperature</string>
+    <string name="str3">The Fahrenheit temperature is: </string>
+    <string name="btn_dollar_label" translatable="false">Dollar </string>
+    <string name="btn_euro_label" translatable="false">Euro </string>
+    <string name="btn_won_label" translatable="false">Won </string>
+    <string name="btn_rate_label" translatable="false">Rate</string>
+    <string name="rmb_hint" translatable="false">Input RMB</string>
+
+
+
+
+</resources>

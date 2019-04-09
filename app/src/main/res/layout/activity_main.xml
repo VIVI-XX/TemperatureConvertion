@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/txtout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/str1"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:hint="@string/str2"
+        android:inputType="text|number" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_label"
+        android:onClick="onClick"
+
+        />
+    <TextView
+
+        android:id="@+id/txtout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/str3"
+        android:textSize="20sp" />
+
+</LinearLayout>

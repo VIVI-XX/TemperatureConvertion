@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hello</string>
+    <string name="str1">欢迎来到温度转换程序！</string>
+    <string name="str2">请输入摄氏温度</string>
+    <string name="btn_label">转换成华氏温度</string>
+    <string name="str3">对应的华氏温度为：</string>
+</resources>
