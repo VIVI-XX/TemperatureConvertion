@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyListActivity">
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Data" />
+
+
+    <!--也可直接定义numColumns，一行几列
+    <GridView
+    android:id="@+id/mylist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:columnWidth="100dp"
+    android:numColumns="auto_fit"
+    />
+    -->
+
+
+</LinearLayout>

@@ -7,10 +7,10 @@
     <string name="btn_dollar_label" translatable="false">Dollar </string>
     <string name="btn_euro_label" translatable="false">Euro </string>
     <string name="btn_won_label" translatable="false">Won </string>
-    <string name="btn_rate_label" translatable="false">Rate</string>
+    <string name="btn_config_label" translatable="false">Config</string>
     <string name="rmb_hint" translatable="false">Input RMB</string>
-
-
+    <string name="menu_set_label" translatable="false">Setting</string>
+    <string name="label_open_list" translatable="false">OpenList</string>
 
 
 </resources>
