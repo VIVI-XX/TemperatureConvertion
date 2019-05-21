@@ -26,6 +26,17 @@ public class RateManager {
         db.close();
     }
 
+    public void addAll(List<RateItem> list) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        for (RateItem item : list) {
+            ContentValues values = new ContentValues();
+            values.put("curname", item.getCurName());
+            values.put("currate", item.getCurRate());
+            db.insert(TBNAME, null, values);
+        }
+        db.close();
+    }
+
     public List<RateItem> listAll() {
         List<RateItem> rateList = null;
         SQLiteDatabase db = dbHelper.getReadableDatabase();
@@ -45,4 +56,11 @@ public class RateManager {
         db.close();
         return rateList;
     }
+
+    public void deleteAll() {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        db.delete(TBNAME, null, null);
+        db.close();
+    }
+
 }
