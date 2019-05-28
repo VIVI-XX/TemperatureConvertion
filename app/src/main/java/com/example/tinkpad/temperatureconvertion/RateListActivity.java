@@ -77,18 +77,17 @@ public class RateListActivity extends ListActivity implements Runnable {
             Log.i("run", "日期相等，从数据库中获取数据");
             RateManager manager = new RateManager(this);
             for (RateItem item : manager.listAll()) {
-                retList.add(item.getCurName() + "-->" + item.getCurRate());
+                retList.add(item.getCurName() + "=>" + item.getCurRate());
             }
 
         } else {
             //获取网络数据
             Log.i("run", "日期不相等，从网络中获取在线数据");
 
-
             Document doc = null;
             try {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(3);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -116,14 +115,13 @@ public class RateListActivity extends ListActivity implements Runnable {
                     Log.i(TAG, "run: " + td1.text() + "==>" + td2.text());
                     retList.add(str1 + "==>" + val);
                     rateList.add(new RateItem(str1, val));
-
-
                 }
 
                 //把数据写入数据库中
                 RateManager manager = new RateManager(this);
                 manager.deleteAll();
                 manager.addAll(rateList);
+                Log.i(TAG, "run: 已写入数据库");
 
                 //更新记录日期
                 SharedPreferences sp = getSharedPreferences("myrate", Context.MODE_PRIVATE);
@@ -132,10 +130,10 @@ public class RateListActivity extends ListActivity implements Runnable {
                 edit.commit();
                 Log.i("run", "更新日期结束：" + curDateStr);
 
-
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
 
             Message msg = handler.obtainMessage(7);
             msg.obj = retList;
