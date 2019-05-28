@@ -11,6 +11,9 @@
     <string name="rmb_hint" translatable="false">Input RMB</string>
     <string name="menu_set_label" translatable="false">Setting</string>
     <string name="label_open_list" translatable="false">OpenList</string>
+    <string name="rdo_home_label1" translatable="false">首页</string>
+    <string name="rdo_func_label1" translatable="false">功能</string>
+    <string name="rdo_setting_label1" translatable="false">设置</string>
 
 
 </resources>
