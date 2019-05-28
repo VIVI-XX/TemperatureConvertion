@@ -78,6 +78,7 @@ public class RateListActivity extends ListActivity implements Runnable {
             RateManager manager = new RateManager(this);
             for (RateItem item : manager.listAll()) {
                 retList.add(item.getCurName() + "=>" + item.getCurRate());
+
             }
 
         } else {
@@ -135,12 +136,10 @@ public class RateListActivity extends ListActivity implements Runnable {
             }
 
 
-            Message msg = handler.obtainMessage(7);
-            msg.obj = retList;
-            handler.sendMessage(msg);
-
-
         }
+        Message msg = handler.obtainMessage(7);
+        msg.obj = retList;
+        handler.sendMessage(msg);
     }
 
         }
